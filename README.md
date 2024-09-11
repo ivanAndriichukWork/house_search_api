@@ -3,6 +3,7 @@
 ## init project
 
 ```bash
+cp .env.example .env
 npm run setup
 ```
 
