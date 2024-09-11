@@ -310,7 +310,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/houses?livingType=Kaufen&propertyType=Loft&area={min=10,max=100}",
+							"raw": "http://localhost:3000/api/houses?livingType=Kaufen&propertyType=Loft&area[max]=100000&area[mim]=1&price[min]=1&price[max]=10000000",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -335,13 +335,20 @@
 									"value": "Loft"
 								},
 								{
-									"key": "area.max",
-									"value": "100000",
-									"disabled": true
+									"key": "area[max]",
+									"value": "100000"
 								},
 								{
-									"key": "area",
-									"value": "{min=10,max=100}"
+									"key": "area[mim]",
+									"value": "1"
+								},
+								{
+									"key": "price[min]",
+									"value": "1"
+								},
+								{
+									"key": "price[max]",
+									"value": "10000000"
 								}
 							]
 						}
