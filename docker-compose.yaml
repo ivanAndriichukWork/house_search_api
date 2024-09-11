@@ -1,0 +1,43 @@
+services:
+  postgresql:
+    image: postgres:16.3
+    container_name: dev-test-pg
+    ports:
+      - "65432:5432"
+    volumes:
+      - postgresql-test-local:/var/lib/postgresql/data
+    env_file:
+      .env
+    restart: unless-stopped
+    logging:
+      options:
+        max-size: 100m
+        max-file: "5"
+    networks:
+      - localcalc
+  
+  server:
+    build: 
+      context: .
+      dockerfile: dev.Dockerfile
+    container_name: dev-test-server
+    volumes:
+      - '.:/root/app/'
+    ports:
+      - "3000:3000"
+    env_file:
+      .env
+    depends_on:
+      - postgresql
+    networks:
+      - localcalc
+
+networks:
+  localcalc:
+    driver: bridge
+
+volumes:
+  postgresql-test-local:
+    driver: local
+  server:
+    driver: local
