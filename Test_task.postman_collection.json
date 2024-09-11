@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "82d223bb-45da-49ac-8c4e-db54f1d4112f",
+		"name": "Test_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29408360"
+	},
+	"item": [
+		{
+			"name": "Add houses",
+			"item": [
+				{
+					"name": "Add house #1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Charmante Villa im Grünen\",\n    \"description\": \"Moderne Villa mit großem Garten und Swimmingpool.\",\n    \"price\": 1200000,\n    \"area\": 300,\n    \"bedrooms\": 5,\n    \"bathrooms\": 3,\n    \"propertyType\": \"Villa\",\n    \"livingType\": \"Kaufen\",\n    \"rooms\": 7,\n    \"location\": {\n      \"country\": \"Germany\",\n      \"state\": \"Bavaria\",\n      \"city\": \"Munich\",\n      \"postalCode\": \"80331\",\n      \"address\": \"Schönstrasse 15\"\n    },\n    \"images\": [\n      {\n        \"imageUrl\": \"https://example.com/villa1.jpg\",\n        \"isMain\": true,\n        \"description\": \"Frontansicht der Villa\"\n      },\n      {\n        \"imageUrl\": \"https://example.com/villa2.jpg\",\n        \"isMain\": false,\n        \"description\": \"Garten und Pool\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/houses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add house #2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Luxuriöses Penthouse in Hamburg\",\n    \"description\": \"Exquisites Penthouse mit Panorama-Aussicht und Terrasse.\",\n    \"price\": 2200000,\n    \"area\": 250,\n    \"bedrooms\": 4,\n    \"bathrooms\": 3,\n    \"propertyType\": \"Penthouse\",\n    \"livingType\": \"Kaufen\",\n    \"rooms\": 6,\n    \"location\": {\n      \"country\": \"Germany\",\n      \"state\": \"Hamburg\",\n      \"city\": \"Hamburg\",\n      \"postalCode\": \"20095\",\n      \"address\": \"Elbstraße 42\"\n    },\n    \"images\": [\n      {\n        \"imageUrl\": \"https://example.com/penthouse1.jpg\",\n        \"isMain\": true,\n        \"description\": \"Aussicht vom Balkon\"\n      },\n      {\n        \"imageUrl\": \"https://example.com/penthouse2.jpg\",\n        \"isMain\": false,\n        \"description\": \"Wohnbereich\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/houses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add house #3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Gemütliches Landhaus in Stuttgart\",\n    \"description\": \"Klassisches Landhaus mit großem Grundstück.\",\n    \"price\": 950000,\n    \"area\": 180,\n    \"bedrooms\": 4,\n    \"bathrooms\": 2,\n    \"propertyType\": \"Landhaus\",\n    \"livingType\": \"Kaufen\",\n    \"rooms\": 5,\n    \"location\": {\n      \"country\": \"Germany\",\n      \"state\": \"Baden-Württemberg\",\n      \"city\": \"Stuttgart\",\n      \"postalCode\": \"70173\",\n      \"address\": \"Gartenstraße 8\"\n    },\n    \"images\": [\n      {\n        \"imageUrl\": \"https://example.com/landhaus1.jpg\",\n        \"isMain\": true,\n        \"description\": \"Fassade des Landhauses\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/houses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add house #4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Moderne Neubauwohnung in Köln\",\n    \"description\": \"Neubauwohnung mit hochwertiger Ausstattung.\",\n    \"price\": 600000,\n    \"area\": 100,\n    \"bedrooms\": 2,\n    \"bathrooms\": 1,\n    \"propertyType\": \"Wohnung\",\n    \"livingType\": \"Kaufen\",\n    \"rooms\": 3,\n    \"location\": {\n      \"country\": \"Germany\",\n      \"state\": \"North Rhine-Westphalia\",\n      \"city\": \"Cologne\",\n      \"postalCode\": \"50667\",\n      \"address\": \"Ringstraße 10\"\n    },\n    \"images\": []\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/houses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add house #5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Hochwertige Loftwohnung in Frankfurt\",\n    \"description\": \"Loftwohnung in zentraler Lage mit offenen Räumen.\",\n    \"price\": 1350000,\n    \"area\": 220,\n    \"bedrooms\": 3,\n    \"bathrooms\": 2,\n    \"propertyType\": \"Loft\",\n    \"livingType\": \"Kaufen\",\n    \"rooms\": 5,\n    \"location\": {\n      \"country\": \"Germany\",\n      \"state\": \"Hesse\",\n      \"city\": \"Frankfurt\",\n      \"postalCode\": \"60311\",\n      \"address\": \"Mainstraße 45\"\n    },\n    \"images\": [\n      {\n        \"imageUrl\": \"https://example.com/loft1.jpg\",\n        \"isMain\": true,\n        \"description\": \"Offene Wohnräume\"\n      },\n      {\n        \"imageUrl\": \"https://example.com/loft2.jpg\",\n        \"isMain\": false,\n        \"description\": \"Blick auf die Stadt\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/houses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add house #6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Elegantes Reihenhaus in Düsseldorf\",\n    \"description\": \"Reihenhaus in ruhiger Lage mit Garten.\",\n    \"price\": 750000,\n    \"area\": 150,\n    \"bedrooms\": 3,\n    \"bathrooms\": 2,\n    \"propertyType\": \"Reihenhaus\",\n    \"livingType\": \"Kaufen\",\n    \"rooms\": 4,\n    \"location\": {\n      \"country\": \"Germany\",\n      \"state\": \"North Rhine-Westphalia\",\n      \"city\": \"Düsseldorf\",\n      \"postalCode\": \"40213\",\n      \"address\": \"Gartenstraße 12\"\n    },\n    \"images\": []\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/houses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add house #7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Schöne Maisonette-Wohnung in Leipzig\",\n    \"description\": \"Maisonette-Wohnung mit Balkon und guter Anbindung.\",\n    \"price\": 670000,\n    \"area\": 130,\n    \"bedrooms\": 3,\n    \"bathrooms\": 2,\n    \"propertyType\": \"Maisonette\",\n    \"livingType\": \"Kaufen\",\n    \"rooms\": 4,\n    \"location\": {\n      \"country\": \"Germany\",\n      \"state\": \"Saxony\",\n      \"city\": \"Leipzig\",\n      \"postalCode\": \"04109\",\n      \"address\": \"Lindenstraße 25\"\n    },\n    \"images\": [\n      {\n        \"imageUrl\": \"https://example.com/maisonette1.jpg\",\n        \"isMain\": true,\n        \"description\": \"Wohnbereich mit Balkon\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/houses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add house #8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Moderne Loft-Wohnung in Bremen\",\n    \"description\": \"Loft-Wohnung mit modernem Design und viel Licht.\",\n    \"price\": 550000,\n    \"area\": 90,\n    \"bedrooms\": 2,\n    \"bathrooms\": 1,\n    \"propertyType\": \"Loft\",\n    \"livingType\": \"Kaufen\",\n    \"rooms\": 3,\n    \"location\": {\n      \"country\": \"Germany\",\n      \"state\": \"Bremen\",\n      \"city\": \"Bremen\",\n      \"postalCode\": \"28195\",\n      \"address\": \"Hafenstraße 9\"\n    },\n    \"images\": []\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/houses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add house #9",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Charmante Altbauwohnung in Nürnberg\",\n    \"description\": \"Altbauwohnung mit historischen Elementen und Balkon.\",\n    \"price\": 830000,\n    \"area\": 140,\n    \"bedrooms\": 3,\n    \"bathrooms\": 1,\n    \"propertyType\": \"Wohnung\",\n    \"livingType\": \"Kaufen\",\n    \"rooms\": 4,\n    \"location\": {\n      \"country\": \"Germany\",\n      \"state\": \"Bavaria\",\n      \"city\": \"Nuremberg\",\n      \"postalCode\": \"90402\",\n      \"address\": \"Altstadtstraße 30\"\n    },\n    \"images\": [\n      {\n        \"imageUrl\": \"https://example.com/altbau1.jpg\",\n        \"isMain\": true,\n        \"description\": \"Historisches Wohnzimmer\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/houses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add house #10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Stylische Neubauwohnung in Karlsruhe\",\n    \"description\": \"Neubauwohnung mit moderner Ausstattung und guter Lage.\",\n    \"price\": 700000,\n    \"area\": 110,\n    \"bedrooms\": 2,\n    \"bathrooms\": 1,\n    \"propertyType\": \"Wohnung\",\n    \"livingType\": \"Kaufen\",\n    \"rooms\": 3,\n    \"location\": {\n      \"country\": \"Germany\",\n      \"state\": \"Baden-Württemberg\",\n      \"city\": \"Karlsruhe\",\n      \"postalCode\": \"76131\",\n      \"address\": \"Zähringerstraße 8\"\n    },\n    \"images\": []\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/houses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/houses?livingType=Kaufen&propertyType=Loft&area={min=10,max=100}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"houses"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Mun",
+									"disabled": true
+								},
+								{
+									"key": "livingType",
+									"value": "Kaufen"
+								},
+								{
+									"key": "propertyType",
+									"value": "Loft"
+								},
+								{
+									"key": "area.max",
+									"value": "100000",
+									"disabled": true
+								},
+								{
+									"key": "area",
+									"value": "{min=10,max=100}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
